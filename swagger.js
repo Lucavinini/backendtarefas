@@ -9,9 +9,14 @@ const options = {
       description: "API de tarefas com autenticação",
     },
     servers: [
-      {
-        url: "http://localhost:4000",
-      },
+     {
+    url: 'https://backendtarefas-syhe.onrender.com/',
+    description: 'Render (produção)'
+  },
+  {
+    url: 'http://localhost:4000/',
+    description: 'Localhost (desenvolvimento)'
+  }
     ],
     components: {
       securitySchemes: {
